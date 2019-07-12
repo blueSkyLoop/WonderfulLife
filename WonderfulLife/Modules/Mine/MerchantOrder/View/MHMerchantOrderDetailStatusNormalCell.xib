@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="158" id="bmo-R3-N8t" customClass="MHMerchantOrderDetailStatusNormalCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="162.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bmo-R3-N8t" id="UuL-pE-Ahp">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AyL-qX-NUZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="eCq-mE-5Mw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单编号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vy-I8-Ssk">
+                        <rect key="frame" x="16" y="116" width="84" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="CEX-kO-JJG"/>
+                            <constraint firstAttribute="width" constant="84" id="vIF-ND-ezW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.51764705879999995" green="0.57254901960000004" blue="0.65098039220000004" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTn-tM-0QQ">
+                        <rect key="frame" x="100" y="116" width="204" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="z9L-Ia-zBs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.2784313725" green="0.33725490200000002" blue="0.41176470590000003" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="merchantOrderDetail_box" translatesAutoresizingMaskIntoConstraints="NO" id="8E4-AJ-Btj">
+                        <rect key="frame" x="209" y="20" width="63" height="61"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="63" id="eZn-ct-qnc"/>
+                            <constraint firstAttribute="height" constant="61" id="vwb-0k-Z0d"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已完成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEc-99-PQ9">
+                        <rect key="frame" x="24" y="39.5" width="55.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="XTn-tM-0QQ" secondAttribute="bottom" constant="16" id="0li-em-eQw"/>
+                    <constraint firstItem="1vy-I8-Ssk" firstAttribute="top" secondItem="AyL-qX-NUZ" secondAttribute="bottom" constant="16" id="2KT-1V-6HW"/>
+                    <constraint firstItem="8E4-AJ-Btj" firstAttribute="centerY" secondItem="AyL-qX-NUZ" secondAttribute="centerY" id="8RQ-CW-BbT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="XTn-tM-0QQ" secondAttribute="trailing" constant="8" id="8i7-Hb-pcX"/>
+                    <constraint firstItem="vEc-99-PQ9" firstAttribute="leading" secondItem="UuL-pE-Ahp" secondAttribute="leadingMargin" constant="16" id="Lv1-3W-J7W"/>
+                    <constraint firstItem="vEc-99-PQ9" firstAttribute="centerY" secondItem="AyL-qX-NUZ" secondAttribute="centerY" id="MKf-PN-XQP"/>
+                    <constraint firstItem="1vy-I8-Ssk" firstAttribute="leading" secondItem="UuL-pE-Ahp" secondAttribute="leadingMargin" constant="8" id="mYT-DC-K5s"/>
+                    <constraint firstItem="XTn-tM-0QQ" firstAttribute="leading" secondItem="1vy-I8-Ssk" secondAttribute="trailing" id="pYW-ph-W2k"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="8E4-AJ-Btj" secondAttribute="trailing" constant="40" id="skl-3Y-Bfe"/>
+                    <constraint firstItem="XTn-tM-0QQ" firstAttribute="top" secondItem="UuL-pE-Ahp" secondAttribute="topMargin" constant="108" id="v4w-fp-inz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="AyL-qX-NUZ" firstAttribute="top" secondItem="bmo-R3-N8t" secondAttribute="top" id="gqg-sO-1Mw"/>
+                <constraint firstAttribute="trailing" secondItem="AyL-qX-NUZ" secondAttribute="trailing" id="hss-7y-sCu"/>
+                <constraint firstItem="AyL-qX-NUZ" firstAttribute="leading" secondItem="bmo-R3-N8t" secondAttribute="leading" id="lJo-ww-2AV"/>
+            </constraints>
+            <connections>
+                <outlet property="goodsOrderNumber" destination="XTn-tM-0QQ" id="WcY-7U-6Mh"/>
+                <outlet property="goodsOrderStatusLabel" destination="vEc-99-PQ9" id="FaR-t4-8oL"/>
+                <outlet property="gradientImageView" destination="AyL-qX-NUZ" id="g0c-HP-bS5"/>
+                <outlet property="statusImage" destination="8E4-AJ-Btj" id="Gs0-9D-SCW"/>
+            </connections>
+            <point key="canvasLocation" x="-99" y="-81"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="merchantOrderDetail_box" width="64" height="61"/>
+    </resources>
+</document>

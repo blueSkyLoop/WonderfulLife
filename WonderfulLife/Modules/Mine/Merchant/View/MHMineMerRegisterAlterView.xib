@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6AU-cf-JOe" userLabel="Mine Mer Tip View No Phone" customClass="MHMineMerRegisterAlterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwf-Qn-GOO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="clearBtnAction:" destination="6AU-cf-JOe" eventType="touchUpInside" id="C7l-kx-u0G"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9r-oT-Uvp">
+                    <rect key="frame" x="24" y="78" width="327" height="419"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ps_failure_war" translatesAutoresizingMaskIntoConstraints="NO" id="qyX-yt-mkj">
+                            <rect key="frame" x="129" y="56" width="68" height="68"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="qyX-yt-mkj" secondAttribute="height" multiplier="1:1" id="v8T-Xp-82p"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZm-mB-Iuh" customClass="YYLabel">
+                            <rect key="frame" x="31" y="148" width="265" height="132"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtJ-S9-DSK" userLabel="know No Phone" customClass="MHThemeButton">
+                            <rect key="frame" x="24" y="320" width="279" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="TKt-rO-czx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <state key="normal" title="知道了">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="knowAction:" destination="6AU-cf-JOe" eventType="touchUpInside" id="6uf-We-v59"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="qyX-yt-mkj" firstAttribute="width" secondItem="a9r-oT-Uvp" secondAttribute="height" multiplier="18:97" constant="-9.8350515463917532" id="07m-Fk-IoD"/>
+                        <constraint firstItem="dtJ-S9-DSK" firstAttribute="top" secondItem="SZm-mB-Iuh" secondAttribute="bottom" constant="40" id="0Fv-FR-yZP"/>
+                        <constraint firstItem="qyX-yt-mkj" firstAttribute="centerX" secondItem="a9r-oT-Uvp" secondAttribute="centerX" id="1zG-u3-Y47"/>
+                        <constraint firstAttribute="trailing" secondItem="SZm-mB-Iuh" secondAttribute="trailing" constant="31" id="G0Y-9K-eLr"/>
+                        <constraint firstItem="qyX-yt-mkj" firstAttribute="top" secondItem="a9r-oT-Uvp" secondAttribute="top" constant="56" id="Gho-yP-4sW"/>
+                        <constraint firstItem="dtJ-S9-DSK" firstAttribute="centerX" secondItem="SZm-mB-Iuh" secondAttribute="centerX" id="L3L-k1-qqr"/>
+                        <constraint firstAttribute="bottom" secondItem="dtJ-S9-DSK" secondAttribute="bottom" constant="43" id="RLk-Mb-gbs"/>
+                        <constraint firstItem="SZm-mB-Iuh" firstAttribute="centerX" secondItem="qyX-yt-mkj" secondAttribute="centerX" id="Sqg-Qb-qKs"/>
+                        <constraint firstItem="SZm-mB-Iuh" firstAttribute="leading" secondItem="a9r-oT-Uvp" secondAttribute="leading" constant="31" id="giX-Y8-uBb"/>
+                        <constraint firstItem="SZm-mB-Iuh" firstAttribute="top" secondItem="qyX-yt-mkj" secondAttribute="bottom" constant="24" id="oEo-ZI-lfF"/>
+                        <constraint firstAttribute="trailing" secondItem="dtJ-S9-DSK" secondAttribute="trailing" constant="24" id="ogJ-aQ-A0v"/>
+                        <constraint firstItem="dtJ-S9-DSK" firstAttribute="leading" secondItem="a9r-oT-Uvp" secondAttribute="leading" constant="24" id="xa3-F7-iiQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="a9r-oT-Uvp" secondAttribute="trailing" constant="24" id="0Hh-Vx-QGa"/>
+                <constraint firstAttribute="bottom" secondItem="lwf-Qn-GOO" secondAttribute="bottom" id="6Ac-iW-xWb"/>
+                <constraint firstAttribute="trailing" secondItem="lwf-Qn-GOO" secondAttribute="trailing" id="Brb-3j-W7H"/>
+                <constraint firstItem="a9r-oT-Uvp" firstAttribute="height" secondItem="6AU-cf-JOe" secondAttribute="height" multiplier="441:667" constant="-22" id="CNy-vm-UuP"/>
+                <constraint firstItem="a9r-oT-Uvp" firstAttribute="centerX" secondItem="6AU-cf-JOe" secondAttribute="centerX" id="DCN-4l-zW4"/>
+                <constraint firstItem="a9r-oT-Uvp" firstAttribute="top" secondItem="6AU-cf-JOe" secondAttribute="top" constant="78" id="FKe-No-p9T"/>
+                <constraint firstItem="a9r-oT-Uvp" firstAttribute="width" secondItem="6AU-cf-JOe" secondAttribute="width" multiplier="296:375" constant="31" id="fKk-30-y8H"/>
+                <constraint firstItem="a9r-oT-Uvp" firstAttribute="leading" secondItem="6AU-cf-JOe" secondAttribute="leading" constant="24" id="i7p-0v-eel"/>
+                <constraint firstItem="lwf-Qn-GOO" firstAttribute="top" secondItem="6AU-cf-JOe" secondAttribute="top" id="uif-sb-Yzv"/>
+                <constraint firstItem="lwf-Qn-GOO" firstAttribute="leading" secondItem="6AU-cf-JOe" secondAttribute="leading" id="zAl-NZ-1ZS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="conentLab" destination="SZm-mB-Iuh" id="VKm-LI-vjf"/>
+                <outlet property="doneBtn" destination="dtJ-S9-DSK" id="9kp-7E-1WG"/>
+                <outlet property="doneCon_H" destination="TKt-rO-czx" id="Hlr-s0-H2Y"/>
+                <outlet property="doneCons_bottom" destination="RLk-Mb-gbs" id="Fs2-Vv-GUR"/>
+                <outlet property="layerView" destination="a9r-oT-Uvp" id="qJz-NQ-6ee"/>
+                <outlet property="layerViewCons_H" destination="CNy-vm-UuP" id="yA6-Op-4JV"/>
+                <outlet property="layerViewCons_Top" destination="FKe-No-p9T" id="a8g-nO-fjS"/>
+            </connections>
+            <point key="canvasLocation" x="-189" y="-47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ps_failure_war" width="72" height="72"/>
+    </resources>
+</document>

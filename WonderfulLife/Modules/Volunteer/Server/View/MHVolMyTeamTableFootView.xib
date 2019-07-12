@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MHVolMyTeamTableFootView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtJ-dp-pjI">
+                    <rect key="frame" x="24" y="20" width="327" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="F2W-FY-68g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="申请加入服务项目">
+                        <color key="titleColor" red="0.12549019607843137" green="0.62745098039215685" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="blU-1b-Eks"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每人最多申请加入 2 个志愿服务" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAO-of-Zyf">
+                    <rect key="frame" x="79.5" y="92" width="216" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="QMJ-iT-hM7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.66274509803921566" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vtJ-dp-pjI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="3W8-sK-zXI"/>
+                <constraint firstAttribute="trailing" secondItem="vtJ-dp-pjI" secondAttribute="trailing" constant="24" id="Gw8-J7-vVE"/>
+                <constraint firstItem="zAO-of-Zyf" firstAttribute="top" secondItem="vtJ-dp-pjI" secondAttribute="bottom" constant="16" id="cnT-hc-NF2"/>
+                <constraint firstItem="zAO-of-Zyf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dX7-kD-Uo6"/>
+                <constraint firstItem="vtJ-dp-pjI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="wBk-oo-ypM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buttonHeight" destination="F2W-FY-68g" id="FKK-ec-yph"/>
+                <outlet property="buttonToLabel" destination="cnT-hc-NF2" id="OP3-t6-bSr"/>
+                <outlet property="buttonToTop" destination="wBk-oo-ypM" id="N39-eL-CzS"/>
+                <outlet property="mh_button" destination="vtJ-dp-pjI" id="RoL-EB-k14"/>
+            </connections>
+        </view>
+    </objects>
+</document>

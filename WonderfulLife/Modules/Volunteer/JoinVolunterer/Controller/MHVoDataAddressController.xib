@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHVoDataAddressController">
+            <connections>
+                <outlet property="containerView" destination="trZ-BZ-mQ7" id="ggE-qW-X5O"/>
+                <outlet property="textView" destination="6Sc-xM-PS7" id="KPd-Kc-Xjs"/>
+                <outlet property="titleLabel" destination="dTL-N0-T3K" id="eJQ-UM-r3B"/>
+                <outlet property="top" destination="XO1-4E-gQb" id="l2M-Zd-epA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="住址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTL-N0-T3K">
+                    <rect key="frame" x="153" y="64" width="69" height="41"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                    <color key="textColor" red="0.1960784314" green="0.25098039220000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trZ-BZ-mQ7">
+                    <rect key="frame" x="23.5" y="137" width="327" height="168"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Sc-xM-PS7" customClass="MHVoAddressTextView">
+                            <rect key="frame" x="11.5" y="13" width="303" height="142"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" red="0.1960784314" green="0.25098039220000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="DFq-ba-5Av"/>
+                            </connections>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="6Sc-xM-PS7" firstAttribute="leading" secondItem="trZ-BZ-mQ7" secondAttribute="leading" constant="12" id="6j2-fr-Lvg"/>
+                        <constraint firstItem="6Sc-xM-PS7" firstAttribute="top" secondItem="trZ-BZ-mQ7" secondAttribute="top" constant="13" id="MHp-Bn-rZT"/>
+                        <constraint firstAttribute="bottom" secondItem="6Sc-xM-PS7" secondAttribute="bottom" constant="13" id="QJb-w5-WV3"/>
+                        <constraint firstAttribute="trailing" secondItem="6Sc-xM-PS7" secondAttribute="trailing" constant="12" id="uBA-3E-UIL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="trZ-BZ-mQ7" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="168:667" id="0Wb-rw-mLw"/>
+                <constraint firstItem="trZ-BZ-mQ7" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="327:375" id="BuN-xi-m4q"/>
+                <constraint firstItem="trZ-BZ-mQ7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DLK-Nt-Pzp"/>
+                <constraint firstItem="trZ-BZ-mQ7" firstAttribute="top" secondItem="dTL-N0-T3K" secondAttribute="bottom" constant="32" id="Fcr-eL-ptk"/>
+                <constraint firstItem="dTL-N0-T3K" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="XO1-4E-gQb"/>
+                <constraint firstItem="dTL-N0-T3K" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="swB-0f-L3A"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

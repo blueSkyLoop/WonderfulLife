@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>WonderfulLife_appStore.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>WonderfulLife_customer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>WonderfulLife_dev.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>217F15B91F7CDA2D0086C412</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>217F18051F7CDA550086C412</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8E3CF9E91F0A65E5007DB233</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8E3CFA021F0A65F0007DB233</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8E3CFA0D1F0A65F0007DB233</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

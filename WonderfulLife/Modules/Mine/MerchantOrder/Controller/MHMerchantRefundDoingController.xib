@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHMerchantRefundDoingController">
+            <connections>
+                <outlet property="IndexCenterX" destination="k7Z-uJ-okI" id="3EP-GW-CMC"/>
+                <outlet property="indexLine" destination="5Yo-4d-V0b" id="Dab-KL-JWI"/>
+                <outlet property="segmentLine" destination="KuP-QW-Qlc" id="zkl-PY-FQ8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="menuButtons" destination="vX1-dV-Q42" id="huN-PP-NYh"/>
+                <outletCollection property="menuButtons" destination="SnA-Kj-0Xz" id="fEf-Qq-4Vr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="处理退款" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzm-WQ-GCc">
+                    <rect key="frame" x="119" y="0.0" width="137.5" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="dvK-jy-kcy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                    <color key="textColor" red="0.1960784314" green="0.25098039220000001" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1020" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX1-dV-Q42">
+                    <rect key="frame" x="70" y="80.5" width="87" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="wnw-B1-9b6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="未处理退款">
+                        <color key="titleColor" red="0.1960784314" green="0.25098039220000001" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" red="1" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectedMenuSomeItem:" destination="-1" eventType="touchUpInside" id="SeE-dJ-MJa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1021" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SnA-Kj-0Xz">
+                    <rect key="frame" x="218" y="80.5" width="87" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="kIc-Vt-vES"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="已处理退款">
+                        <color key="titleColor" red="0.1960784314" green="0.25098039220000001" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" red="1" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectedMenuSomeItem:" destination="-1" eventType="touchUpInside" id="CDC-YM-G85"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuP-QW-Qlc">
+                    <rect key="frame" x="0.0" y="122" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.82745098039215681" green="0.86274509803921573" blue="0.90196078431372551" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="tfK-GL-xsD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Yo-4d-V0b">
+                    <rect key="frame" x="76" y="119" width="75" height="3"/>
+                    <color key="backgroundColor" red="1" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="T5y-IO-Wgp"/>
+                        <constraint firstAttribute="height" constant="3" id="gE6-bz-SEf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5Yo-4d-V0b" firstAttribute="top" secondItem="vX1-dV-Q42" secondAttribute="bottom" constant="5.5" id="3ME-hd-XFh"/>
+                <constraint firstItem="SnA-Kj-0Xz" firstAttribute="top" secondItem="Kzm-WQ-GCc" secondAttribute="bottom" constant="32.5" id="IxL-I5-OeE"/>
+                <constraint firstItem="Kzm-WQ-GCc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LZq-Kq-gFc"/>
+                <constraint firstItem="Kzm-WQ-GCc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LgE-AV-oFg"/>
+                <constraint firstItem="KuP-QW-Qlc" firstAttribute="top" secondItem="SnA-Kj-0Xz" secondAttribute="bottom" constant="8.5" id="XV6-Nh-guj"/>
+                <constraint firstItem="SnA-Kj-0Xz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="74" id="bgJ-Ux-H3r"/>
+                <constraint firstAttribute="trailing" secondItem="KuP-QW-Qlc" secondAttribute="trailing" id="d6g-6F-bUh"/>
+                <constraint firstItem="KuP-QW-Qlc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gEg-cM-cj5"/>
+                <constraint firstItem="5Yo-4d-V0b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-74" id="k7Z-uJ-okI"/>
+                <constraint firstItem="vX1-dV-Q42" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-74" id="p3Z-lR-wjt"/>
+                <constraint firstItem="vX1-dV-Q42" firstAttribute="top" secondItem="Kzm-WQ-GCc" secondAttribute="bottom" constant="32.5" id="zle-eL-q1S"/>
+            </constraints>
+            <point key="canvasLocation" x="-213.5" y="-10.5"/>
+        </view>
+    </objects>
+</document>

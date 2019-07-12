@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MHHomeCertificationView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j7o-Ug-Vgz">
+                    <rect key="frame" x="40" y="78" width="295" height="461"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MHHomeCertificationHead" translatesAutoresizingMaskIntoConstraints="NO" id="it4-Ku-tCf">
+                            <rect key="frame" x="0.0" y="0.0" width="295" height="186"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Duw-KR-43R">
+                            <rect key="frame" x="0.0" y="186" width="295" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="o98-gj-vKP"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOS-D7-lDV">
+                            <rect key="frame" x="0.0" y="186" width="295" height="275"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="认证住户身份" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7X8-pc-rYv">
+                                    <rect key="frame" x="75" y="12" width="146" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="33" id="Vss-ii-BpA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <color key="textColor" red="0.19607843137254902" green="0.25098039215686274" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主人，您还未认证住户身份，为更方便与邻居交流，享受更多特权功能，请尽快完成住户认证。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cD-0A-DoG">
+                                    <rect key="frame" x="24" y="61" width="247" height="84"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="84" id="n9b-Sx-jKE"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.19607843137254902" green="0.25098039215686274" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9N-ns-IWW" customClass="MHThemeButton">
+                                    <rect key="frame" x="24" y="185" width="247" height="56"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="56" id="f2a-xk-P1a"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    <state key="normal" title="马上认证"/>
+                                    <connections>
+                                        <action selector="certificationAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="pzh-rA-t5H"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="7X8-pc-rYv" firstAttribute="centerX" secondItem="FOS-D7-lDV" secondAttribute="centerX" id="2ik-lh-0tV"/>
+                                <constraint firstAttribute="bottom" secondItem="Y9N-ns-IWW" secondAttribute="bottom" constant="34" id="NEW-ay-2pS"/>
+                                <constraint firstItem="Y9N-ns-IWW" firstAttribute="top" secondItem="6cD-0A-DoG" secondAttribute="bottom" constant="40" id="O7W-B7-4mu"/>
+                                <constraint firstItem="7X8-pc-rYv" firstAttribute="top" secondItem="FOS-D7-lDV" secondAttribute="top" constant="12" id="Pc8-fy-6id"/>
+                                <constraint firstItem="6cD-0A-DoG" firstAttribute="leading" secondItem="FOS-D7-lDV" secondAttribute="leading" constant="24" id="RGY-2e-qR1"/>
+                                <constraint firstItem="Y9N-ns-IWW" firstAttribute="leading" secondItem="FOS-D7-lDV" secondAttribute="leading" constant="24" id="aDK-LS-O6J"/>
+                                <constraint firstAttribute="trailing" secondItem="Y9N-ns-IWW" secondAttribute="trailing" constant="24" id="c0e-9H-8zn"/>
+                                <constraint firstAttribute="trailing" secondItem="6cD-0A-DoG" secondAttribute="trailing" constant="24" id="cQl-wt-LAu"/>
+                                <constraint firstItem="6cD-0A-DoG" firstAttribute="top" secondItem="7X8-pc-rYv" secondAttribute="bottom" constant="16" id="sLR-1j-sTN"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="it4-Ku-tCf" secondAttribute="trailing" id="Aqk-LL-sLV"/>
+                        <constraint firstItem="it4-Ku-tCf" firstAttribute="top" secondItem="j7o-Ug-Vgz" secondAttribute="top" id="DFI-U7-Fg9"/>
+                        <constraint firstItem="FOS-D7-lDV" firstAttribute="top" secondItem="it4-Ku-tCf" secondAttribute="bottom" id="JEC-ZM-f7G"/>
+                        <constraint firstAttribute="trailing" secondItem="Duw-KR-43R" secondAttribute="trailing" id="OvU-dq-cn9"/>
+                        <constraint firstItem="it4-Ku-tCf" firstAttribute="leading" secondItem="j7o-Ug-Vgz" secondAttribute="leading" id="Yib-D3-XYB"/>
+                        <constraint firstItem="Duw-KR-43R" firstAttribute="top" secondItem="it4-Ku-tCf" secondAttribute="bottom" id="kLg-ld-WqZ"/>
+                        <constraint firstItem="FOS-D7-lDV" firstAttribute="leading" secondItem="j7o-Ug-Vgz" secondAttribute="leading" id="kVI-de-ggL"/>
+                        <constraint firstItem="Duw-KR-43R" firstAttribute="leading" secondItem="j7o-Ug-Vgz" secondAttribute="leading" id="lDY-gB-iGw"/>
+                        <constraint firstAttribute="trailing" secondItem="FOS-D7-lDV" secondAttribute="trailing" id="omF-3o-ilh"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yY-RK-YR1">
+                    <rect key="frame" x="173.5" y="571" width="28" height="28"/>
+                    <state key="normal" image="MHHomeCertificationclose"/>
+                    <connections>
+                        <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="hNH-xW-Q9c"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="0yY-RK-YR1" firstAttribute="top" secondItem="j7o-Ug-Vgz" secondAttribute="bottom" constant="32" id="9uI-WW-jFs"/>
+                <constraint firstItem="0yY-RK-YR1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="C1c-l7-OS8"/>
+                <constraint firstItem="j7o-Ug-Vgz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="G9c-rD-JOB"/>
+                <constraint firstItem="j7o-Ug-Vgz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="78" id="d7C-FY-PVy"/>
+                <constraint firstAttribute="trailing" secondItem="j7o-Ug-Vgz" secondAttribute="trailing" constant="40" id="qGy-p2-vVb"/>
+                <constraint firstAttribute="bottom" secondItem="0yY-RK-YR1" secondAttribute="bottom" constant="68" id="xGI-Mk-H8s"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="certificationButton" destination="Y9N-ns-IWW" id="NxC-3J-76A"/>
+                <outlet property="containView" destination="FOS-D7-lDV" id="mM7-cT-eAL"/>
+                <outlet property="totopconstant" destination="d7C-FY-PVy" id="TvL-dd-iys"/>
+                <outletCollection property="heightContants" destination="d7C-FY-PVy" id="uNG-q5-yrg"/>
+                <outletCollection property="heightContants" destination="O7W-B7-4mu" id="9n0-bT-jhk"/>
+                <outletCollection property="heightContants" destination="NEW-ay-2pS" id="dOO-Pz-1MU"/>
+                <outletCollection property="heightContants" destination="sLR-1j-sTN" id="9eI-x9-p8H"/>
+                <outletCollection property="heightContants" destination="Pc8-fy-6id" id="zhB-Xs-LDq"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MHHomeCertificationHead" width="296" height="186"/>
+        <image name="MHHomeCertificationclose" width="28" height="28"/>
+    </resources>
+</document>

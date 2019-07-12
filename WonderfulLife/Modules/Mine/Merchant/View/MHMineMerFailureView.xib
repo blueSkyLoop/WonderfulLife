@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oV9-qY-Gi6" customClass="MHMineMerFailureView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ps_failure" translatesAutoresizingMaskIntoConstraints="NO" id="NLM-QA-cLA">
+                    <rect key="frame" x="151" y="41" width="72" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="72" id="5K2-gR-fc1"/>
+                        <constraint firstAttribute="height" constant="72" id="Nt7-Ig-n5C"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收款失败" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNs-Ab-CI8">
+                    <rect key="frame" x="139" y="129" width="98" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.2784313725" green="0.33725490200000002" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NLM-QA-cLA" firstAttribute="centerX" secondItem="oV9-qY-Gi6" secondAttribute="centerX" id="BBl-vK-c8z"/>
+                <constraint firstItem="bNs-Ab-CI8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oV9-qY-Gi6" secondAttribute="leading" constant="24" id="DrT-Bd-3nd"/>
+                <constraint firstItem="NLM-QA-cLA" firstAttribute="top" secondItem="oV9-qY-Gi6" secondAttribute="top" constant="41" id="RMr-2N-q0D"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bNs-Ab-CI8" secondAttribute="trailing" constant="24" id="ZFL-wW-VBw"/>
+                <constraint firstItem="bNs-Ab-CI8" firstAttribute="top" secondItem="NLM-QA-cLA" secondAttribute="bottom" constant="16" id="dUV-mt-0nT"/>
+                <constraint firstItem="bNs-Ab-CI8" firstAttribute="centerX" secondItem="oV9-qY-Gi6" secondAttribute="centerX" id="f8Y-0d-2Yj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLab" destination="bNs-Ab-CI8" id="xsg-GX-hhB"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="ps_failure" width="72" height="72"/>
+    </resources>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="rbu-Bm-jhV" userLabel="Vo Attendance Record Detail Cell" customClass="MHVoAttendanceRecordDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="33"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rbu-Bm-jhV" id="dJU-5K-rQn">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="32.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动地址：" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKh-RB-oqP">
+                        <rect key="frame" x="24" y="0.0" width="92" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="QWp-Q4-vmr"/>
+                            <constraint firstAttribute="width" constant="92" id="nbV-Ga-qUj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.51764705879999995" green="0.57254901960000004" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中泰国际广场" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4E-bV-EiA">
+                        <rect key="frame" x="116" y="0.0" width="235" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="015-Sq-CTJ"/>
+                            <constraint firstAttribute="width" constant="235" id="etb-nL-bCg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.14901960780000001" green="0.18823529410000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="P4E-bV-EiA" firstAttribute="leading" secondItem="iKh-RB-oqP" secondAttribute="trailing" id="Iif-jy-QSJ"/>
+                    <constraint firstItem="iKh-RB-oqP" firstAttribute="top" secondItem="dJU-5K-rQn" secondAttribute="top" id="JYC-KZ-Hmz"/>
+                    <constraint firstItem="iKh-RB-oqP" firstAttribute="leading" secondItem="dJU-5K-rQn" secondAttribute="leading" constant="24" id="Vs2-UF-Mpd"/>
+                    <constraint firstItem="P4E-bV-EiA" firstAttribute="top" secondItem="dJU-5K-rQn" secondAttribute="top" id="zEQ-ky-IO9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="P4E-bV-EiA" id="mc3-aU-nxE"/>
+                <outlet property="titleLabel" destination="iKh-RB-oqP" id="BHZ-hE-Wsf"/>
+                <outletCollection property="constraints" destination="Vs2-UF-Mpd" id="IJL-Wb-LVO"/>
+                <outletCollection property="constraints" destination="etb-nL-bCg" id="SYI-Ue-P3D"/>
+            </connections>
+            <point key="canvasLocation" x="-371" y="14"/>
+        </tableViewCell>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+</document>

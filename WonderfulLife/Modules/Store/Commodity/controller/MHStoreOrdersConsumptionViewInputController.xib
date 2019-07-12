@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHStoreOrdersConsumptionViewInputController">
+            <connections>
+                <outlet property="buttonBottom" destination="T8m-Vy-XAQ" id="HHb-zb-Wsm"/>
+                <outlet property="sureBtn" destination="gLS-5Y-hWV" id="wea-NK-stC"/>
+                <outlet property="textF" destination="NY8-ww-ci2" id="VbT-Pz-mKt"/>
+                <outlet property="titleLabel" destination="Mom-wk-5j1" id="Eol-hs-YtP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单消费" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mom-wk-5j1">
+                    <rect key="frame" x="28" y="72" width="129.5" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Gpt-iO-cHF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.25098039215686274" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入订单编号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sw3-LV-cs8">
+                    <rect key="frame" x="33" y="149" width="104" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Idw-kC-SJ1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入订单券编号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NY8-ww-ci2">
+                    <rect key="frame" x="24" y="191" width="327" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="ub1-lB-dxu"/>
+                    </constraints>
+                    <color key="textColor" red="0.19607843137254902" green="0.25098039215686274" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLS-5Y-hWV" customClass="MHThemeButton">
+                    <rect key="frame" x="24" y="591" width="327" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="3ox-u8-07u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="确 定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sureAction:" destination="-1" eventType="touchUpInside" id="cRM-hZ-9pr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xR-pE-oy3">
+                    <rect key="frame" x="0.0" y="20" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="UDI-Tw-u8a"/>
+                        <constraint firstAttribute="width" constant="44" id="huE-Nx-SKL"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="navi_back"/>
+                    <connections>
+                        <action selector="back" destination="-1" eventType="touchUpInside" id="1Da-9t-RfK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sw3-LV-cs8" firstAttribute="top" secondItem="Mom-wk-5j1" secondAttribute="bottom" constant="32" id="CM4-VI-7Ea"/>
+                <constraint firstAttribute="bottom" secondItem="gLS-5Y-hWV" secondAttribute="bottom" constant="20" id="T8m-Vy-XAQ"/>
+                <constraint firstItem="gLS-5Y-hWV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="cNP-93-NaP"/>
+                <constraint firstAttribute="trailing" secondItem="gLS-5Y-hWV" secondAttribute="trailing" constant="24" id="eor-SF-kRf"/>
+                <constraint firstItem="sw3-LV-cs8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="gGs-A4-8JR"/>
+                <constraint firstItem="4xR-pE-oy3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="iJJ-9h-cFD"/>
+                <constraint firstItem="Mom-wk-5j1" firstAttribute="top" secondItem="4xR-pE-oy3" secondAttribute="bottom" constant="8" id="m5N-n8-gFw"/>
+                <constraint firstItem="Mom-wk-5j1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="sSQ-an-Pf9"/>
+                <constraint firstItem="4xR-pE-oy3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sUz-Uc-sZr"/>
+                <constraint firstItem="NY8-ww-ci2" firstAttribute="top" secondItem="sw3-LV-cs8" secondAttribute="bottom" constant="18" id="thj-kd-x2L"/>
+                <constraint firstAttribute="trailing" secondItem="NY8-ww-ci2" secondAttribute="trailing" constant="24" id="uPU-Zv-Vg8"/>
+                <constraint firstItem="NY8-ww-ci2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="vPK-Zn-3R0"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navi_back" width="44" height="44"/>
+    </resources>
+</document>

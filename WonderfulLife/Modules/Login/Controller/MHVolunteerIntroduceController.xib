@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHVolunteerIntroduceController">
+            <connections>
+                <outlet property="commitButton" destination="9Xw-6C-YpT" id="Mhh-cc-Ztg"/>
+                <outlet property="countLabel" destination="X0Q-vI-K9f" id="D85-qb-0W2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="WB1-So-fIr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目前志愿者人数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8K-zV-EeW">
+                    <rect key="frame" x="102.5" y="64" width="170.5" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.27843137254901962" green="0.33725490196078434" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0Q-vI-K9f">
+                    <rect key="frame" x="84" y="117" width="207" height="77"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="64"/>
+                    <color key="textColor" red="0.1960784314" green="0.25098039220000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ce_applySuccess" translatesAutoresizingMaskIntoConstraints="NO" id="qyl-4C-Zgr">
+                    <rect key="frame" x="77" y="218" width="220" height="220"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qyl-4C-Zgr" secondAttribute="height" multiplier="1:1" id="xfW-Ta-c1C"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xw-6C-YpT" customClass="MHThemeButton">
+                    <rect key="frame" x="24" y="470" width="327" height="56"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="马上加入">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="joinImmediately:" destination="-1" eventType="touchUpInside" id="5dX-8n-KzP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtL-Ye-GG1">
+                    <rect key="frame" x="152.5" y="550" width="70" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="H0A-rC-Wp9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="随便逛逛">
+                        <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="casual" destination="-1" eventType="touchUpInside" id="qKX-Qk-zX9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="X0Q-vI-K9f" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="77:667" id="7Zt-aw-KNa"/>
+                <constraint firstItem="9Xw-6C-YpT" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="327:375" id="A8c-lJ-ZcH"/>
+                <constraint firstItem="qyl-4C-Zgr" firstAttribute="top" secondItem="X0Q-vI-K9f" secondAttribute="bottom" constant="24" id="ICp-Uw-deG"/>
+                <constraint firstItem="XtL-Ye-GG1" firstAttribute="top" secondItem="9Xw-6C-YpT" secondAttribute="bottom" constant="24" id="OeI-fq-Gr7"/>
+                <constraint firstItem="9Xw-6C-YpT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Xmy-AX-zAB"/>
+                <constraint firstItem="X0Q-vI-K9f" firstAttribute="top" secondItem="P8K-zV-EeW" secondAttribute="bottom" constant="24" id="YOV-Lq-J9z"/>
+                <constraint firstItem="X0Q-vI-K9f" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="e8w-go-Qq9"/>
+                <constraint firstItem="9Xw-6C-YpT" firstAttribute="top" secondItem="qyl-4C-Zgr" secondAttribute="bottom" constant="32" id="fJk-k3-if9"/>
+                <constraint firstItem="qyl-4C-Zgr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g42-gM-T9q"/>
+                <constraint firstItem="P8K-zV-EeW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hm2-Ym-Kb6"/>
+                <constraint firstItem="XtL-Ye-GG1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kX3-pK-FLD"/>
+                <constraint firstItem="qyl-4C-Zgr" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="220:375" id="oRm-D8-XTw"/>
+                <constraint firstItem="P8K-zV-EeW" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="29:667" id="u4F-5u-do0"/>
+                <constraint firstItem="9Xw-6C-YpT" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="56:667" id="wrb-eJ-1mi"/>
+                <constraint firstItem="P8K-zV-EeW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="x2L-6w-f0u"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ce_applySuccess" width="16" height="16"/>
+    </resources>
+</document>

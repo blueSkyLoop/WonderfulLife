@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHHoFooDeliUnAllowController">
+            <connections>
+                <outlet property="button" destination="eAE-SY-3PL" id="t32-JG-I8F"/>
+                <outlet property="buttonTop" destination="5hj-pR-mqK" id="tAi-gy-FUg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="constraints" destination="FEd-Qc-4z3" id="Eg6-qM-7XM"/>
+                <outletCollection property="constraints" destination="ubz-pf-E0z" id="68g-wi-svR"/>
+                <outletCollection property="constraints" destination="C2x-bu-htL" id="caZ-Wu-Q4k"/>
+                <outletCollection property="constraints" destination="nZj-hV-YJp" id="zna-5o-5kY"/>
+                <outletCollection property="constraints" destination="z8D-BH-aew" id="XXo-9o-HQG"/>
+                <outletCollection property="constraints" destination="5hj-pR-mqK" id="gJt-P1-2Z5"/>
+                <outletCollection property="constraints" destination="iiH-5S-gw8" id="1yz-bp-cCi"/>
+                <outletCollection property="constraints" destination="Gta-wy-DRu" id="hZt-PH-DGL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MHHoFooDeliUnAllow" translatesAutoresizingMaskIntoConstraints="NO" id="7oh-2Z-7lv">
+                    <rect key="frame" x="67.5" y="120" width="240" height="160"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不好意思" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snh-Zp-Mdl">
+                    <rect key="frame" x="123.5" y="328" width="129.5" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                    <color key="textColor" red="0.1960784314" green="0.25098039220000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsM-o4-MDF">
+                    <rect key="frame" x="40" y="379.5" width="295" height="72"/>
+                    <attributedString key="attributedText">
+                        <fragment content="食堂送餐服务目前只对行动不方便的社区居民提供，如有需要请到所在街道的幸福食堂登记办理">
+                            <attributes>
+                                <color key="NSColor" red="0.27843137254901962" green="0.33725490196078434" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="18" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="9" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAE-SY-3PL" customClass="MHThemeButton">
+                    <rect key="frame" x="68" y="531.5" width="239" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="j35-8e-i4T"/>
+                    </constraints>
+                    <state key="normal" title="知道了"/>
+                    <connections>
+                        <action selector="pop" destination="-1" eventType="touchUpInside" id="JYl-Z0-3nE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eAE-SY-3PL" firstAttribute="top" secondItem="LsM-o4-MDF" secondAttribute="bottom" constant="80" id="5hj-pR-mqK"/>
+                <constraint firstItem="LsM-o4-MDF" firstAttribute="top" secondItem="snh-Zp-Mdl" secondAttribute="bottom" constant="13" id="C2x-bu-htL"/>
+                <constraint firstItem="7oh-2Z-7lv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="FEd-Qc-4z3"/>
+                <constraint firstItem="eAE-SY-3PL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="68" id="Gta-wy-DRu"/>
+                <constraint firstItem="7oh-2Z-7lv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fIB-Ol-pzH"/>
+                <constraint firstItem="snh-Zp-Mdl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hCm-nl-bnx"/>
+                <constraint firstAttribute="trailing" secondItem="eAE-SY-3PL" secondAttribute="trailing" constant="68" id="iiH-5S-gw8"/>
+                <constraint firstItem="LsM-o4-MDF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="nZj-hV-YJp"/>
+                <constraint firstItem="snh-Zp-Mdl" firstAttribute="top" secondItem="7oh-2Z-7lv" secondAttribute="bottom" constant="48" id="ubz-pf-E0z"/>
+                <constraint firstAttribute="trailing" secondItem="LsM-o4-MDF" secondAttribute="trailing" constant="40" id="z8D-BH-aew"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="MHHoFooDeliUnAllow" width="240" height="160"/>
+    </resources>
+</document>

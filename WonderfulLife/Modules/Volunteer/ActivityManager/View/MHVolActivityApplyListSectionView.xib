@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MHVolActivityApplyListSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已报名成员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRu-nC-ydd">
+                    <rect key="frame" x="24" y="14" width="102" height="28.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28.5" id="6fx-nn-Csd"/>
+                        <constraint firstAttribute="width" constant="102" id="7jP-lL-eBi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.25098039215686274" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLG-oO-LKF">
+                    <rect key="frame" x="24" y="56.5" width="327" height="0.5"/>
+                    <color key="backgroundColor" red="0.82745098039215681" green="0.86274509803921573" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="AlR-uJ-JDW"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1人" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ueh-J2-aSl">
+                    <rect key="frame" x="321" y="14" width="30" height="28.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28.5" id="f8H-nY-qKE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <color key="textColor" red="0.1960784314" green="0.25098039220000001" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jLG-oO-LKF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="2OI-vI-GsP"/>
+                <constraint firstItem="jLG-oO-LKF" firstAttribute="top" secondItem="Ueh-J2-aSl" secondAttribute="bottom" constant="14" id="3Mb-VL-dSe"/>
+                <constraint firstAttribute="bottom" secondItem="jLG-oO-LKF" secondAttribute="bottom" id="3g1-T1-HRD"/>
+                <constraint firstAttribute="trailing" secondItem="jLG-oO-LKF" secondAttribute="trailing" constant="24" id="AW6-aG-gDd"/>
+                <constraint firstItem="Ueh-J2-aSl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="BPX-gN-GVw"/>
+                <constraint firstItem="nRu-nC-ydd" firstAttribute="centerY" secondItem="Ueh-J2-aSl" secondAttribute="centerY" id="MV1-1G-ODQ"/>
+                <constraint firstAttribute="trailing" secondItem="Ueh-J2-aSl" secondAttribute="trailing" constant="24" id="bHZ-X1-3Za"/>
+                <constraint firstItem="Ueh-J2-aSl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nRu-nC-ydd" secondAttribute="trailing" constant="50" id="gym-7J-uKo"/>
+                <constraint firstItem="nRu-nC-ydd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="lAw-ke-80q"/>
+                <constraint firstItem="nRu-nC-ydd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="mRJ-jO-ioD"/>
+                <constraint firstItem="jLG-oO-LKF" firstAttribute="top" secondItem="nRu-nC-ydd" secondAttribute="bottom" constant="14" id="rcp-oN-1LX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countLB" destination="Ueh-J2-aSl" id="6c1-6X-Y4M"/>
+                <outlet property="titleLB" destination="nRu-nC-ydd" id="BSE-yj-KpZ"/>
+            </connections>
+        </view>
+    </objects>
+</document>

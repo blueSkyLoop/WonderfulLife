@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHVoSerTeamController">
+            <connections>
+                <outlet property="headerContentView" destination="AQA-vD-xxo" id="OTC-EY-la4"/>
+                <outlet property="headerView" destination="WAW-h1-qLT" id="Jmz-PR-EO8"/>
+                <outlet property="tableView" destination="Mue-oJ-H89" id="cCs-QW-5Zi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的服务队" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpx-t2-eTw">
+                    <rect key="frame" x="102.5" y="64" width="171.5" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="iQX-f1-cB5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.25098039215686274" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mue-oJ-H89">
+                    <rect key="frame" x="0.0" y="132" width="375" height="535"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="weu-rO-pDh"/>
+                        <outlet property="delegate" destination="-1" id="xSk-fH-0sB"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Mue-oJ-H89" firstAttribute="top" secondItem="Cpx-t2-eTw" secondAttribute="bottom" constant="20" id="0b0-Om-YqS"/>
+                <constraint firstAttribute="trailing" secondItem="Mue-oJ-H89" secondAttribute="trailing" id="NAV-C6-kVD"/>
+                <constraint firstItem="Cpx-t2-eTw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="NBM-k9-xgW"/>
+                <constraint firstItem="Mue-oJ-H89" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kQR-ar-KCZ"/>
+                <constraint firstItem="Cpx-t2-eTw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tJP-Nw-jxp"/>
+                <constraint firstAttribute="bottom" secondItem="Mue-oJ-H89" secondAttribute="bottom" id="wCA-4T-d0i"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="WAW-h1-qLT" userLabel="headerView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="218"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQA-vD-xxo" userLabel="headerContentView">
+                    <rect key="frame" x="24" y="0.0" width="327" height="218"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MHVolWithServerItemIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Isc-bM-nPY">
+                            <rect key="frame" x="123" y="45" width="81" height="84"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="84" id="HDs-DV-nph"/>
+                                <constraint firstAttribute="width" constant="81" id="wpb-UZ-acg"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有参与志愿者服务项目" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFh-kN-doG">
+                            <rect key="frame" x="24" y="139" width="279" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="RHu-av-BhR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.66274509803921566" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="iFh-kN-doG" firstAttribute="top" secondItem="Isc-bM-nPY" secondAttribute="bottom" constant="10" id="3Tt-sP-X3M"/>
+                        <constraint firstItem="iFh-kN-doG" firstAttribute="leading" secondItem="AQA-vD-xxo" secondAttribute="leading" constant="24" id="VzT-qr-kkJ"/>
+                        <constraint firstItem="Isc-bM-nPY" firstAttribute="top" secondItem="AQA-vD-xxo" secondAttribute="top" constant="45" id="bgb-b8-4HZ"/>
+                        <constraint firstAttribute="trailing" secondItem="iFh-kN-doG" secondAttribute="trailing" constant="24" id="hja-WR-ilA"/>
+                        <constraint firstItem="Isc-bM-nPY" firstAttribute="centerX" secondItem="AQA-vD-xxo" secondAttribute="centerX" id="w7f-Nw-DIY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AQA-vD-xxo" secondAttribute="trailing" constant="24" id="4FH-AE-wcI"/>
+                <constraint firstItem="AQA-vD-xxo" firstAttribute="leading" secondItem="WAW-h1-qLT" secondAttribute="leading" constant="24" id="LBL-37-ous"/>
+                <constraint firstItem="AQA-vD-xxo" firstAttribute="top" secondItem="WAW-h1-qLT" secondAttribute="top" id="UEP-mU-MI1"/>
+                <constraint firstAttribute="bottom" secondItem="AQA-vD-xxo" secondAttribute="bottom" id="vue-6Q-LNB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="403" y="-324"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MHVolWithServerItemIcon" width="81" height="84"/>
+    </resources>
+</document>

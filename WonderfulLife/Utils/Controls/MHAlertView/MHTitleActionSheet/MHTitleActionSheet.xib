@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MHTitleActionSheet">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="217"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOV-34-TgQ">
+                    <rect key="frame" x="24" y="125" width="287" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="bzq-qb-4yX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="取  消">
+                        <color key="titleColor" red="0.078431372549019607" green="0.10980392156862745" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="elc-UP-sE3"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLy-bI-Si0">
+                    <rect key="frame" x="24" y="0.0" width="287" height="101"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否退出登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KT-BP-Zaa">
+                            <rect key="frame" x="0.0" y="0.0" width="287" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="RuB-gB-3FQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.66274509803921566" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbI-rk-4hX" userLabel="分割线">
+                            <rect key="frame" x="0.0" y="40" width="287" height="1"/>
+                            <color key="backgroundColor" red="0.82745098039215681" green="0.86274509803921573" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="d9Y-yd-Lff"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ain-jt-pbm">
+                            <rect key="frame" x="0.0" y="41" width="287" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" red="0.19607843137254902" green="0.25098039215686274" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sureButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="BMc-U2-bcN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ain-jt-pbm" secondAttribute="bottom" id="0ri-yL-wL6"/>
+                        <constraint firstItem="ain-jt-pbm" firstAttribute="leading" secondItem="vLy-bI-Si0" secondAttribute="leading" id="Jpe-Xx-NpV"/>
+                        <constraint firstItem="3KT-BP-Zaa" firstAttribute="top" secondItem="vLy-bI-Si0" secondAttribute="top" id="LVL-H6-1W3"/>
+                        <constraint firstAttribute="height" constant="101" id="Pmb-5m-fso"/>
+                        <constraint firstAttribute="trailing" secondItem="3KT-BP-Zaa" secondAttribute="trailing" id="UlL-X6-FRE"/>
+                        <constraint firstItem="hbI-rk-4hX" firstAttribute="leading" secondItem="vLy-bI-Si0" secondAttribute="leading" id="fdh-hM-Auj"/>
+                        <constraint firstAttribute="trailing" secondItem="hbI-rk-4hX" secondAttribute="trailing" id="fsZ-UI-2Ti"/>
+                        <constraint firstItem="hbI-rk-4hX" firstAttribute="top" secondItem="3KT-BP-Zaa" secondAttribute="bottom" id="g3M-jM-eBE"/>
+                        <constraint firstItem="ain-jt-pbm" firstAttribute="top" secondItem="hbI-rk-4hX" secondAttribute="bottom" id="q9L-T0-CdZ"/>
+                        <constraint firstAttribute="trailing" secondItem="ain-jt-pbm" secondAttribute="trailing" id="tLm-fu-LJc"/>
+                        <constraint firstItem="3KT-BP-Zaa" firstAttribute="leading" secondItem="vLy-bI-Si0" secondAttribute="leading" id="zIH-tN-kqa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uOV-34-TgQ" firstAttribute="top" secondItem="vLy-bI-Si0" secondAttribute="bottom" constant="24" id="GbB-xr-1oi"/>
+                <constraint firstAttribute="bottom" secondItem="uOV-34-TgQ" secondAttribute="bottom" constant="32" id="R6f-nZ-lbz"/>
+                <constraint firstAttribute="trailing" secondItem="vLy-bI-Si0" secondAttribute="trailing" constant="24" id="aHg-Ra-x49"/>
+                <constraint firstItem="uOV-34-TgQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="iSd-eU-mFw"/>
+                <constraint firstItem="vLy-bI-Si0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="sNn-Ro-d03"/>
+                <constraint firstItem="vLy-bI-Si0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xHN-Kh-3fA"/>
+                <constraint firstAttribute="trailing" secondItem="uOV-34-TgQ" secondAttribute="trailing" constant="24" id="yRa-hm-fpw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="uOV-34-TgQ" id="yBm-VA-VzP"/>
+                <outlet property="sureButton" destination="ain-jt-pbm" id="Xji-AI-fZ3"/>
+                <outlet property="titleLabel" destination="3KT-BP-Zaa" id="1gS-n0-2Kx"/>
+                <outlet property="topView" destination="vLy-bI-Si0" id="VqI-Iq-SmG"/>
+            </connections>
+            <point key="canvasLocation" x="13.5" y="-153.5"/>
+        </view>
+    </objects>
+</document>

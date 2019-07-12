@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="gGe-zb-1cs" customClass="MHMineMerFinListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gGe-zb-1cs" id="hsg-fm-OGk">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="治安巡逻队哈哈哈哈" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8v-o7-3lY">
+                        <rect key="frame" x="24" y="21" width="183.5" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="E3s-Mw-ACa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.1960784314" green="0.25098039220000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-06-21" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0z-Sw-GEu">
+                        <rect key="frame" x="24" y="57" width="86" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="rfP-UK-MPO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.66274509800000003" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收入" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkc-q6-AMe">
+                        <rect key="frame" x="238" y="28" width="58" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="LsJ-cN-lww"/>
+                            <constraint firstAttribute="width" constant="58" id="Mfd-pH-Hpf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                        <color key="textColor" red="0.1960784314" green="0.25098039220000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="l8v-o7-3lY" firstAttribute="top" secondItem="hsg-fm-OGk" secondAttribute="topMargin" constant="13" id="0xy-zm-Zch"/>
+                    <constraint firstItem="m0z-Sw-GEu" firstAttribute="leading" secondItem="hsg-fm-OGk" secondAttribute="leadingMargin" constant="16" id="AE6-RV-Frl"/>
+                    <constraint firstItem="hkc-q6-AMe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="l8v-o7-3lY" secondAttribute="trailing" constant="10" id="BPs-gr-1NV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hkc-q6-AMe" secondAttribute="trailing" constant="16" id="EYG-2W-2qp"/>
+                    <constraint firstItem="m0z-Sw-GEu" firstAttribute="leading" secondItem="l8v-o7-3lY" secondAttribute="leading" id="KyY-M0-ulC"/>
+                    <constraint firstItem="l8v-o7-3lY" firstAttribute="leading" secondItem="hsg-fm-OGk" secondAttribute="leadingMargin" constant="16" id="Nnd-F6-pMS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="m0z-Sw-GEu" secondAttribute="bottom" constant="12.5" id="TYD-Ds-xiL"/>
+                    <constraint firstItem="m0z-Sw-GEu" firstAttribute="top" secondItem="l8v-o7-3lY" secondAttribute="bottom" constant="8" id="a8n-hr-YlB"/>
+                    <constraint firstItem="hkc-q6-AMe" firstAttribute="centerY" secondItem="hsg-fm-OGk" secondAttribute="centerY" id="lyl-hp-0ml"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="scoreLab" destination="l8v-o7-3lY" id="0bg-Es-Uiq"/>
+                <outlet property="statusLab" destination="hkc-q6-AMe" id="zG4-Wd-XMh"/>
+                <outlet property="timeLab" destination="m0z-Sw-GEu" id="5bG-X8-JjW"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

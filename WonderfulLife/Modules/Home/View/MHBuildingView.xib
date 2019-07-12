@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kgb-iP-B0m" customClass="MHBuildingView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZW-xB-v7f">
+                    <rect key="frame" x="39" y="78" width="296" height="463"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MHBuilding" translatesAutoresizingMaskIntoConstraints="NO" id="uui-h7-G6a">
+                            <rect key="frame" x="0.0" y="0.0" width="296" height="186"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOa-uE-3NO">
+                            <rect key="frame" x="0.0" y="186" width="296" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="mx7-7B-2LN"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeN-e7-v4f">
+                            <rect key="frame" x="0.0" y="186" width="296" height="277"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="功能正在努力建设中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmp-kS-KB2">
+                                    <rect key="frame" x="39" y="12" width="219" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <color key="textColor" red="0.1960784314" green="0.25098039220000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5n-XM-jD3">
+                                    <rect key="frame" x="25" y="57" width="247" height="73"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="非常抱歉，该功能暂时无法使用，开发人员在努力建设中，敬请期待美好志愿新版发布。">
+                                            <attributes>
+                                                <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="11" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yx-bG-80i" customClass="MHThemeButton">
+                                    <rect key="frame" x="25" y="187" width="247" height="56"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    <state key="normal" title="知道了"/>
+                                    <connections>
+                                        <action selector="remove" destination="kgb-iP-B0m" eventType="touchUpInside" id="3WA-48-hMO"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="F5n-XM-jD3" firstAttribute="width" secondItem="8Yx-bG-80i" secondAttribute="width" id="Cxm-A4-ZMP"/>
+                                <constraint firstAttribute="bottom" secondItem="8Yx-bG-80i" secondAttribute="bottom" constant="34" id="McP-Zd-ynD"/>
+                                <constraint firstItem="8Yx-bG-80i" firstAttribute="centerX" secondItem="GeN-e7-v4f" secondAttribute="centerX" id="ZgK-6F-a3g"/>
+                                <constraint firstItem="qmp-kS-KB2" firstAttribute="centerX" secondItem="GeN-e7-v4f" secondAttribute="centerX" id="cBT-6o-vUN"/>
+                                <constraint firstItem="qmp-kS-KB2" firstAttribute="top" secondItem="GeN-e7-v4f" secondAttribute="top" constant="12" id="dse-Hl-QPK"/>
+                                <constraint firstItem="F5n-XM-jD3" firstAttribute="centerX" secondItem="GeN-e7-v4f" secondAttribute="centerX" id="e5f-Ts-x6M"/>
+                                <constraint firstItem="8Yx-bG-80i" firstAttribute="width" secondItem="GeN-e7-v4f" secondAttribute="width" multiplier="247:296" id="f1r-Dk-yVq"/>
+                                <constraint firstItem="8Yx-bG-80i" firstAttribute="height" secondItem="GeN-e7-v4f" secondAttribute="height" multiplier="56:277" id="f7A-xb-FNE"/>
+                                <constraint firstItem="F5n-XM-jD3" firstAttribute="top" secondItem="qmp-kS-KB2" secondAttribute="bottom" constant="16" id="t4m-xN-c5Y"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="dOa-uE-3NO" firstAttribute="top" secondItem="uui-h7-G6a" secondAttribute="bottom" id="2c7-On-geZ"/>
+                        <constraint firstItem="uui-h7-G6a" firstAttribute="leading" secondItem="iZW-xB-v7f" secondAttribute="leading" id="C4S-y9-MCD"/>
+                        <constraint firstAttribute="trailing" secondItem="uui-h7-G6a" secondAttribute="trailing" id="GwK-LN-bG6"/>
+                        <constraint firstItem="GeN-e7-v4f" firstAttribute="leading" secondItem="iZW-xB-v7f" secondAttribute="leading" id="U1u-81-S36"/>
+                        <constraint firstAttribute="trailing" secondItem="GeN-e7-v4f" secondAttribute="trailing" id="V5R-Oe-qwd"/>
+                        <constraint firstItem="uui-h7-G6a" firstAttribute="top" secondItem="iZW-xB-v7f" secondAttribute="top" id="cyV-ov-UBt"/>
+                        <constraint firstAttribute="bottom" secondItem="GeN-e7-v4f" secondAttribute="bottom" id="dWZ-b8-YtX"/>
+                        <constraint firstItem="GeN-e7-v4f" firstAttribute="top" secondItem="uui-h7-G6a" secondAttribute="bottom" id="hdJ-Pt-GpY"/>
+                        <constraint firstItem="uui-h7-G6a" firstAttribute="height" secondItem="iZW-xB-v7f" secondAttribute="height" multiplier="186:463" id="oKO-i6-doF"/>
+                        <constraint firstAttribute="trailing" secondItem="dOa-uE-3NO" secondAttribute="trailing" id="pW5-1D-0KM"/>
+                        <constraint firstItem="dOa-uE-3NO" firstAttribute="leading" secondItem="iZW-xB-v7f" secondAttribute="leading" id="qWc-DS-Vh7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="iZW-xB-v7f" firstAttribute="top" secondItem="kgb-iP-B0m" secondAttribute="top" constant="78" id="Td5-Il-X24"/>
+                <constraint firstItem="iZW-xB-v7f" firstAttribute="centerX" secondItem="kgb-iP-B0m" secondAttribute="centerX" id="eMx-93-AKT"/>
+                <constraint firstItem="iZW-xB-v7f" firstAttribute="height" secondItem="kgb-iP-B0m" secondAttribute="height" multiplier="463:667" id="f1l-CX-WXj"/>
+                <constraint firstItem="iZW-xB-v7f" firstAttribute="width" secondItem="kgb-iP-B0m" secondAttribute="width" multiplier="296:375" id="iYi-jK-Xk9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="containerView" destination="GeN-e7-v4f" id="mUy-3F-hHK"/>
+                <outlet property="detailLabel" destination="F5n-XM-jD3" id="jW2-dg-cjV"/>
+                <outlet property="detailTop" destination="t4m-xN-c5Y" id="gFO-ra-YDa"/>
+                <outlet property="imv" destination="uui-h7-G6a" id="XRe-ge-rhD"/>
+                <outlet property="knowButton" destination="8Yx-bG-80i" id="gRZ-FF-9lc"/>
+                <outlet property="titleLab" destination="qmp-kS-KB2" id="BEL-Pg-3Em"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MHBuilding" width="296" height="180"/>
+    </resources>
+</document>
